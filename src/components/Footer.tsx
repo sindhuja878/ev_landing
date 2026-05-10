@@ -11,19 +11,11 @@ export const Footer = () => {
           <div className="space-y-6">
             <Link to="/" className="flex items-center gap-2">
               <img 
-                src="/logo.png" 
+                src="/logo11.png" 
                 alt="EV Holidays Logo" 
-                className="h-8 md:h-10 w-auto object-contain"
+                className="h-16 md:h-24 lg:h-28 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
-              <div className="flex flex-col">
-                <span className="logo-text logo-glow text-xl">
-                  EV Holidays
-                </span>
-                <span className="text-white/50 leading-none -mt-1 md:-mt-2 text-lg md:text-xl text-center md:text-left transition-opacity hover:text-white/70" style={{ fontFamily: '"Brittany Signature", "Great Vibes", cursive', fontWeight: 400 }}>
-                  Your Experience beyond Imagination
-                </span>
-              </div>
             </Link>
             <p className="text-sm text-text-muted leading-relaxed max-w-xs">
               Transforming corporate travel into meaningful experiences through meticulously planned journeys across 12+ global destinations.

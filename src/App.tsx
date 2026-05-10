@@ -9,7 +9,6 @@ import MiceEvents from './pages/MiceEvents';
 import TeamOutings from './pages/TeamOutings';
 import Destinations from './pages/Destinations';
 import { Layout } from './components/Layout';
-import { AIPopup } from './components/AIPopup';
 import SoulDestination from './pages/SoulDestination';
 
 
@@ -17,7 +16,6 @@ export default function App() {
   return (
     <BrowserRouter>
 
-      <AIPopup />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ai-planner" element={<Layout><AIPlanner /></Layout>} />

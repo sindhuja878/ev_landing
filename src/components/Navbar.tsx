@@ -44,21 +44,13 @@ export const Navbar = () => {
         !isDarkBase ? 'bg-white/90 backdrop-blur-xl shadow-lg border-b border-gray-100 py-4' : 'bg-transparent'
       )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 md:gap-3">
+        <Link to="/" className="flex items-center">
           <img 
-            src="/logo.png" 
+            src="/logo11.png" 
             alt="EV Holidays Logo" 
-            className="h-8 md:h-10 w-auto object-contain"
+            className="h-16 md:h-24 lg:h-28 w-auto object-contain"
             referrerPolicy="no-referrer"
           />
-          <div className="flex flex-col">
-            <span className="logo-text logo-glow">
-              EV Holidays
-            </span>
-            <span className="text-white/60 leading-none -mt-1 md:-mt-2 text-lg md:text-xl text-center md:text-left transition-opacity hover:text-white/80" style={{ fontFamily: '"Brittany Signature", "Great Vibes", cursive', fontWeight: 400 }}>
-              Your Experience beyond Imagination
-            </span>
-          </div>
         </Link>
 
         {/* Desktop Menu */}
@@ -83,10 +75,8 @@ export const Navbar = () => {
             whileTap={{ scale: 0.95 }}
             onClick={() => navigate('/ai-planner')}
             className={cn(
-              "px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-xl transition-all duration-500",
-              isDarkBase 
-                ? "bg-brand-gold-end text-brand-navy" 
-                : "bg-brand-navy text-brand-gold-end"
+              "px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-[0.2em] shadow-[0_0_15px_rgba(34,197,94,0.4)] transition-all duration-500 border border-brand-gold-end",
+              "bg-emerald-800 text-white hover:bg-emerald-700"
             )}
           >
             Plan Trip
